@@ -1,13 +1,2733 @@
 <html>
-  <head>
-    <title>Die Synapse</title>
-  </head>
 
-  <body>
-    <h1>Die Synapse</h1>
-    <h2>Ein kleines Tutorial</h2>
-    <hr>
-    Inhalt:
-    
-  </body>
+<head>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Synapsengifte</title>
+
+    <style>
+        div.textpres {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        img.animationobj {
+            position: absolute;
+        }
+
+
+
+        /* Animationen */
+
+        /* NIKOTIN */
+
+        /* 1 - Aktionspotential kommt an */
+
+        /* 2 - Calciumkanäle öffnen sich und Calcium strömt ein */
+
+        @keyframes nikotin_2_1 {
+            from {
+                top: 200px;
+                left: 90px;
+            }
+
+            to {
+                top: 250px;
+                left: 170px;
+            }
+        }
+
+        @keyframes nikotin_2_2 {
+            from {
+                top: 210px;
+                left: 60px;
+            }
+
+            to {
+                top: 230px;
+                left: 190px;
+            }
+        }
+
+        @keyframes nikotin_2_3 {
+            from {
+                top: 180px;
+                left: 60px;
+            }
+
+            to {
+                top: 280px;
+                left: 190px;
+            }
+        }
+
+
+        .animate_nikotin_2_1 {
+            animation-name: "nikotin_2_1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_2_2 {
+            animation-name: "nikotin_2_2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_2_3 {
+            animation-name: "nikotin_2_3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+        /* 3 - Vesikel verschmilzt mit Präsynapse */
+        @keyframes nikotin_3 {
+            from {
+                top: 260px;
+                left: 125px;
+            }
+
+            to {
+                top: 300px;
+                left: 140px;
+            }
+        }
+
+        .animate_nikotin_3 {
+            animation-name: "nikotin_3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+
+        /* 4 - Neurotransmitter ausschütten */
+
+        @keyframes nikotin_4_1 {
+            from {
+                top: 7px;
+                left: 15px;
+            }
+
+            to {
+                top: 64px;
+                left: -10px;
+            }
+        }
+
+        @keyframes nikotin_4_2 {
+            from {
+                top: 17px;
+                left: 12px;
+            }
+
+            to {
+                top: 67px;
+                left: 117px;
+            }
+        }
+
+        @keyframes nikotin_4_3 {
+            from {
+                top: 13px;
+                left: 2px;
+            }
+
+            to {
+                top: 30px;
+                left: 50px;
+            }
+        }
+
+        @keyframes nikotin_4_4 {
+            from {
+                top: 0px;
+                left: 0px;
+            }
+
+            to {
+                top: -2px;
+                left: 50px;
+            }
+        }
+
+
+
+
+        .animate_nikotin_4_1 {
+            animation-name: "nikotin_4_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_4_2 {
+            animation-name: "nikotin_4_2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_4_3 {
+            animation-name: "nikotin_4_3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_4_4 {
+            animation-name: "nikotin_4_4";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+        /* 5 - Nikotin kommt rein*/
+
+        @keyframes nikotin_5_1 {
+            from {
+                top: 200px;
+                left: 90px;
+            }
+
+            to {
+                top: 300px;
+                left: 95px;
+            }
+        }
+
+        @keyframes nikotin_5_2 {
+            from {
+                top: 210px;
+                left: 80px;
+            }
+
+            to {
+                top: 340px;
+                left: 120px;
+            }
+        }
+
+        @keyframes nikotin_5_3 {
+            from {
+                top: 180px;
+                left: 85px;
+            }
+
+            to {
+                top: 320px;
+                left: 110px;
+            }
+        }
+
+        @keyframes nikotin_5_4_v1 {
+            from {
+                top: 220px;
+                left: 150px;
+            }
+
+            to {
+                top: 260px;
+                left: 125px;
+            }
+        }
+
+        @keyframes nikotin_5_4_v2 {
+            from {
+                top: -2px;
+                left: 50px;
+            }
+
+            to {
+                top: -50px;
+                left: 90px;
+            }
+        }
+
+        @keyframes nikotin_5_4_v3 {
+            from {
+                top: 200px;
+                left: 205px;
+            }
+
+            to {
+                top: 220px;
+                left: 150px;
+            }
+        }
+
+        @keyframes nikotin_5_4_v4 {
+            from {
+                top: 250px;
+                left: 230px;
+            }
+
+            to {
+                top: 200px;
+                left: 205px;
+            }
+        }
+
+
+
+
+
+
+        .animate_nikotin_5_1 {
+            animation-name: "nikotin_5_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_5_2 {
+            animation-name: "nikotin_5_2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_5_3 {
+            animation-name: "nikotin_5_3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_5_4_v1 {
+            animation-name: "nikotin_5_4_v1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_5_4_v2 {
+            animation-name: "nikotin_5_4_v2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_5_4_v3 {
+            animation-name: "nikotin_5_4_v3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_5_4_v4 {
+            animation-name: "nikotin_5_4_v4";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+        /* 6 - Nikotin bindet an die Rezeptoren */
+
+        @keyframes nikotin_6_1 {
+            from {
+                top: 300px;
+                left: 95px;
+            }
+
+            to {
+                top: 368px;
+                left: 149px;
+            }
+        }
+
+        @keyframes nikotin_6_2 {
+            from {
+                top: 340px;
+                left: 120px;
+            }
+
+            to {
+                top: 374px;
+                left: 187px;
+            }
+        }
+
+        @keyframes nikotin_6_3 {
+            from {
+                top: 320px;
+                left: 110px;
+            }
+
+            to {
+                top: 345px;
+                left: 175px;
+            }
+        }
+
+
+
+
+
+        .animate_nikotin_6_1 {
+            animation-name: "nikotin_6_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_6_2 {
+            animation-name: "nikotin_6_2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_6_3 {
+            animation-name: "nikotin_6_3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+        /* 7 - Erregung */
+
+        @keyframes nikotin_7_1 {
+            from {
+                top: 330px;
+                left: 140px;
+            }
+
+            to {
+                top: 397px;
+                left: 115px;
+            }
+        }
+
+        @keyframes nikotin_7_2 {
+            from {
+                top: 330px;
+                left: 200px;
+            }
+
+            to {
+                top: 415px;
+                left: 185px;
+            }
+        }
+
+        @keyframes nikotin_7_3 {
+            from {
+                top: 330px;
+                left: 250px;
+            }
+
+            to {
+                top: 395px;
+                left: 270px;
+            }
+        }
+
+
+
+
+
+        .animate_nikotin_7_1 {
+            animation-name: "nikotin_7_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_7_2 {
+            animation-name: "nikotin_7_2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_7_3 {
+            animation-name: "nikotin_7_3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+        /* 8 - Lösen der Transmitter*/
+
+        @keyframes nikotin_8_1 {
+            from {
+                top: 64px;
+                left: -10px;
+            }
+
+            to {
+                top: 30px;
+                left: 100px;
+            }
+        }
+
+        @keyframes nikotin_8_2 {
+            from {
+                top: 67px;
+                left: 117px;
+            }
+
+            to {
+                top: 20px;
+                left: 170px;
+            }
+        }
+
+        @keyframes nikotin_8_3 {
+            from {
+                top: 30px;
+                left: 50px;
+            }
+
+            to {
+                top: 30px;
+                left: 50px;
+            }
+        }
+
+
+
+
+
+        .animate_nikotin_8_1 {
+            animation-name: "nikotin_8_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_8_2 {
+            animation-name: "nikotin_8_2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_8_3 {
+            animation-name: "nikotin_8_3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        /* 9 - Spaltung der Transmitter (Zerfall in zwei Teile) */
+
+        /* 10 - Wiederaufnahme der Transmitter */
+
+        @keyframes nikotin_10_1 {
+            from {
+                top: 320px;
+                left: 300px;
+            }
+
+            to {
+                top: 340px;
+                left: 295px;
+            }
+        }
+
+        @keyframes nikotin_10_2 {
+            from {
+                top: 310px;
+                left: 310px;
+            }
+
+            to {
+                top: 270px;
+                left: 273px;
+            }
+        }
+
+
+
+
+
+        .animate_nikotin_10_1 {
+            animation-name: "nikotin_10_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_10_2 {
+            animation-name: "nikotin_10_2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        /* 11 - Acetyl-COA */
+
+        /* 12 - Aufbau zu Transmitter */
+
+        @keyframes nikotin_12_1 {
+            from {
+                top: 270px;
+                left: 273px;
+            }
+
+            to {
+                top: 260px;
+                left: 280px;
+            }
+        }
+
+        @keyframes nikotin_12_2 {
+            from {
+                top: 250px;
+                left: 290px;
+            }
+
+            to {
+                top: 260px;
+                left: 285px;
+            }
+        }
+
+
+
+
+
+        .animate_nikotin_12_1 {
+            animation-name: "nikotin_12_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_nikotin_12_2 {
+            animation-name: "nikotin_12_2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        /* 13 - Transmitter geht ins Vesikel */
+
+        @keyframes nikotin_13_1 {
+            from {
+                top: -40px;
+                left: 145px;
+            }
+
+            to {
+                top: -40px;
+                left: 100px;
+            }
+        }
+
+
+        .animate_nikotin_13_1 {
+            animation-name: "nikotin_13_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+        /* LATROTOXIN */
+
+        /* 1 - Aktionspotential kommt an */
+
+        /* 2 - Calciumkanäle öffnen sich und Calcium strömt ein */
+
+        @keyframes latrotoxin_2_1 {
+            from {
+                top: 200px;
+                left: 90px;
+            }
+
+            to {
+                top: 250px;
+                left: 170px;
+            }
+        }
+
+        @keyframes latrotoxin_2_2 {
+            from {
+                top: 210px;
+                left: 60px;
+            }
+
+            to {
+                top: 230px;
+                left: 190px;
+            }
+        }
+
+        @keyframes latrotoxin_2_3 {
+            from {
+                top: 180px;
+                left: 60px;
+            }
+
+            to {
+                top: 280px;
+                left: 190px;
+            }
+        }
+
+
+        .animate_latrotoxin_2_1 {
+            animation-name: "latrotoxin_2_1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_2_2 {
+            animation-name: "latrotoxin_2_2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_2_3 {
+            animation-name: "latrotoxin_2_3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+
+        /* 3 - Latrotoxin gelangt in den synaptischen Spalt */
+
+
+        /* 4 - Latrotoxin blockiert Ca2+ Kanal */
+
+        @keyframes latrotoxin_4_1 {
+            from {
+                top: 180px;
+                left: 85px;
+            }
+
+            to {
+                top: 213px;
+                left: 107px;
+            }
+        }
+
+        .animate_latrotoxin_4_1 {
+            animation-name: "latrotoxin_4_1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        /* 5 - Weitere Ca2+ Ionen kommen rein */
+
+        @keyframes latrotoxin_5_1 {
+            from {
+                top: 200px;
+                left: 90px;
+            }
+
+            to {
+                top: 260px;
+                left: 200px;
+            }
+        }
+
+        @keyframes latrotoxin_5_2 {
+            from {
+                top: 210px;
+                left: 60px;
+            }
+
+            to {
+                top: 260px;
+                left: 270px;
+            }
+        }
+
+        @keyframes latrotoxin_5_3 {
+            from {
+                top: 180px;
+                left: 60px;
+            }
+
+            to {
+                top: 285px;
+                left: 240px;
+            }
+        }
+
+
+        .animate_latrotoxin_5_1 {
+            animation-name: "latrotoxin_5_1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_5_2 {
+            animation-name: "latrotoxin_5_2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_5_3 {
+            animation-name: "latrotoxin_5_3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+
+        /* 6 - Ca2+ Ionen nach oben und alle Versikel verschmelzen */
+
+        @keyframes latrotoxin_6_1 {
+            from {
+                top: 250px;
+                left: 170px;
+            }
+
+            to {
+                top: 200px;
+                left: 180px;
+            }
+        }
+
+        @keyframes latrotoxin_6_2 {
+            from {
+                top: 230px;
+                left: 190px;
+            }
+
+            to {
+                top: 210px;
+                left: 160px;
+            }
+        }
+
+        @keyframes latrotoxin_6_3 {
+            from {
+                top: 280px;
+                left: 190px;
+            }
+
+            to {
+                top: 180px;
+                left: 200px;
+            }
+        }
+
+        @keyframes latrotoxin_6_4 {
+            from {
+                top: 260px;
+                left: 200px;
+            }
+
+            to {
+                top: 200px;
+                left: 240px;
+            }
+        }
+
+        @keyframes latrotoxin_6_5 {
+            from {
+                top: 260px;
+                left: 270px;
+            }
+
+            to {
+                top: 210px;
+                left: 220px;
+            }
+        }
+
+        @keyframes latrotoxin_6_6 {
+            from {
+                top: 285px;
+                left: 240px;
+            }
+
+            to {
+                top: 160px;
+                left: 210px;
+            }
+        }
+
+        @keyframes latrotoxin_6_7_v1 {
+            from {
+                top: 220px;
+                left: 150px;
+            }
+
+            to {
+                top: 297px;
+                left: 160px;
+            }
+        }
+
+        @keyframes latrotoxin_6_7_v2 {
+            from {
+                top: 260px;
+                left: 125px;
+            }
+
+            to {
+                top: 297px;
+                left: 125px;
+            }
+        }
+
+        @keyframes latrotoxin_6_7_v3 {
+            from {
+                top: 200px;
+                left: 205px;
+            }
+
+            to {
+                top: 297px;
+                left: 200px;
+            }
+        }
+
+        @keyframes latrotoxin_6_7_v4 {
+            from {
+                top: 250px;
+                left: 230px;
+            }
+
+            to {
+                top: 297px;
+                left: 240px;
+            }
+        }
+
+
+        .animate_latrotoxin_6_1 {
+            animation-name: "latrotoxin_6_1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_6_2 {
+            animation-name: "latrotoxin_6_2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_6_3 {
+            animation-name: "latrotoxin_6_3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_6_4 {
+            animation-name: "latrotoxin_6_4";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_6_5 {
+            animation-name: "latrotoxin_6_5";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_6_6 {
+            animation-name: "latrotoxin_6_6";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_6_7_v1 {
+            animation-name: "latrotoxin_6_7_v1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_6_7_v2 {
+            animation-name: "latrotoxin_6_7_v2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_6_7_v3 {
+            animation-name: "latrotoxin_6_7_v3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_6_7_v4 {
+            animation-name: "latrotoxin_6_7_v4";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+        /* 7 - Acetylcholin geht in den synaptischen Spalt und binden an die Rezeptoren */
+
+        @keyframes latrotoxin_7_1_nt1 {
+            from {
+                top: 7px;
+                left: 15px;
+            }
+
+            to {
+                top: 74px;
+                left: 27px;
+            }
+        }
+
+        @keyframes latrotoxin_7_1_nt2 {
+            from {
+                top: 17px;
+                left: 12px;
+            }
+
+            to {
+                top: 68px;
+                left: -10px;
+            }
+        }
+
+        @keyframes latrotoxin_7_1_nt3 {
+            from {
+                top: 13px;
+                left: 2px;
+            }
+
+            to {
+                top: 35px;
+                left: 15px;
+            }
+        }
+
+
+        @keyframes latrotoxin_7_2_nt1 {
+            from {
+                top: 7px;
+                left: 15px;
+            }
+
+            to {
+                top: 45px;
+                left: 25px;
+            }
+        }
+
+        @keyframes latrotoxin_7_2_nt2 {
+            from {
+                top: 17px;
+                left: 12px;
+            }
+
+            to {
+                top: 63px;
+                left: 5px;
+            }
+        }
+
+        @keyframes latrotoxin_7_2_nt3 {
+            from {
+                top: 13px;
+                left: 2px;
+            }
+
+            to {
+                top: 35px;
+                left: -5px;
+            }
+        }
+
+
+
+
+        @keyframes latrotoxin_7_3_nt1 {
+            from {
+                top: 7px;
+                left: 15px;
+            }
+
+            to {
+                top: 40px;
+                left: 12px;
+            }
+        }
+
+        @keyframes latrotoxin_7_3_nt2 {
+            from {
+                top: 17px;
+                left: 12px;
+            }
+
+            to {
+                top: 68px;
+                left: 57px;
+            }
+        }
+
+        @keyframes latrotoxin_7_3_nt3 {
+            from {
+                top: 13px;
+                left: 2px;
+            }
+
+            to {
+                top: 75px;
+                left: 6px;
+            }
+        }
+
+
+        @keyframes latrotoxin_7_4_nt1 {
+            from {
+                top: 7px;
+                left: 15px;
+            }
+
+            to {
+                top: 32px;
+                left: 5px;
+            }
+        }
+
+        @keyframes latrotoxin_7_4_nt2 {
+            from {
+                top: 17px;
+                left: 12px;
+            }
+
+            to {
+                top: 60px;
+                left: 33px;
+            }
+        }
+
+        @keyframes latrotoxin_7_4_nt3 {
+            from {
+                top: 13px;
+                left: 2px;
+            }
+
+            to {
+                top: 50px;
+                left: 2px;
+            }
+        }
+
+
+
+
+        .animate_latrotoxin_7_1_nt1 {
+            animation-name: "latrotoxin_7_1_nt1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_1_nt2 {
+            animation-name: "latrotoxin_7_1_nt2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_1_nt3 {
+            animation-name: "latrotoxin_7_1_nt3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_2_nt1 {
+            animation-name: "latrotoxin_7_2_nt1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_2_nt2 {
+            animation-name: "latrotoxin_7_2_nt2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_2_nt3 {
+            animation-name: "latrotoxin_7_2_nt3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_3_nt1 {
+            animation-name: "latrotoxin_7_3_nt1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_3_nt2 {
+            animation-name: "latrotoxin_7_3_nt2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_3_nt3 {
+            animation-name: "latrotoxin_7_3_nt3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_4_nt1 {
+            animation-name: "latrotoxin_7_4_nt1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_4_nt2 {
+            animation-name: "latrotoxin_7_4_nt2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_7_4_nt3 {
+            animation-name: "latrotoxin_7_4_nt3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+        /* 8 - Erregung */
+
+        @keyframes latrotoxin_8_1 {
+            from {
+                top: 330px;
+                left: 140px;
+            }
+
+            to {
+                top: 397px;
+                left: 115px;
+            }
+        }
+
+        @keyframes latrotoxin_8_2 {
+            from {
+                top: 330px;
+                left: 200px;
+            }
+
+            to {
+                top: 415px;
+                left: 185px;
+            }
+        }
+
+        @keyframes latrotoxin_8_3 {
+            from {
+                top: 330px;
+                left: 250px;
+            }
+
+            to {
+                top: 395px;
+                left: 270px;
+            }
+        }
+
+
+
+
+
+        .animate_latrotoxin_8_1 {
+            animation-name: "latrotoxin_8_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_8_2 {
+            animation-name: "latrotoxin_8_2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_latrotoxin_8_3 {
+            animation-name: "latrotoxin_8_3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+        /* BOTULINUMTOXIN */
+
+        /* 1 - Aktionspotential kommt an */
+
+        /* 2 - Calciumkanäle öffnen sich und Calcium strömt ein */
+
+        @keyframes botulinumtoxin_2_1 {
+            from {
+                top: 200px;
+                left: 90px;
+            }
+
+            to {
+                top: 250px;
+                left: 170px;
+            }
+        }
+
+        @keyframes botulinumtoxin_2_2 {
+            from {
+                top: 210px;
+                left: 60px;
+            }
+
+            to {
+                top: 230px;
+                left: 190px;
+            }
+        }
+
+        @keyframes botulinumtoxin_2_3 {
+            from {
+                top: 180px;
+                left: 60px;
+            }
+
+            to {
+                top: 280px;
+                left: 190px;
+            }
+        }
+
+
+        .animate_botulinumtoxin_2_1 {
+            animation-name: "botulinumtoxin_2_1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_botulinumtoxin_2_2 {
+            animation-name: "botulinumtoxin_2_2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_botulinumtoxin_2_3 {
+            animation-name: "botulinumtoxin_2_3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+
+        /* 3 - Vesikel kann nicht verschmelzen */
+
+        @keyframes botulinumtoxin_3_1 {
+            from {
+                top: 260px;
+                left: 125px;
+            }
+
+            to {
+                top: 290px;
+                left: 125px;
+            }
+        }
+
+        @keyframes botulinumtoxin_3_2 {
+            from {
+                top: 290px;
+                left: 170px;
+            }
+
+            to {
+                top: 290px;
+                left: 150px;
+            }
+        }
+
+
+        .animate_botulinumtoxin_3_1 {
+            animation-name: "botulinumtoxin_3_1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_botulinumtoxin_3_2 {
+            animation-name: "botulinumtoxin_3_2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+        /* ALKYLPHOSPHATE */
+
+        /* 1 - Aktionspotential kommt an */
+
+        /* 2 - Calciumkanäle öffnen sich und Calcium strömt ein */
+
+        @keyframes alkylphosphate_2_1 {
+            from {
+                top: 200px;
+                left: 90px;
+            }
+
+            to {
+                top: 250px;
+                left: 170px;
+            }
+        }
+
+        @keyframes alkylphosphate_2_2 {
+            from {
+                top: 210px;
+                left: 60px;
+            }
+
+            to {
+                top: 230px;
+                left: 190px;
+            }
+        }
+
+        @keyframes alkylphosphate_2_3 {
+            from {
+                top: 180px;
+                left: 60px;
+            }
+
+            to {
+                top: 280px;
+                left: 190px;
+            }
+        }
+
+
+        .animate_alkylphosphate_2_1 {
+            animation-name: "alkylphosphate_2_1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_2_2 {
+            animation-name: "alkylphosphate_2_2";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_2_3 {
+            animation-name: "alkylphosphate_2_3";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+        /* 3 - Vesikel verschmilzt mit Präsynapse */
+        @keyframes alkylphosphate_3_1 {
+            from {
+                top: 260px;
+                left: 125px;
+            }
+
+            to {
+                top: 300px;
+                left: 140px;
+            }
+        }
+
+        .animate_alkylphosphate_3_1 {
+            animation-name: "alkylphosphate_3_1";
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+
+        /* 4 - Neurotransmitter ausschütten */
+
+        @keyframes alkylphosphate_4_1 {
+            from {
+                top: 7px;
+                left: 15px;
+            }
+
+            to {
+                top: 64px;
+                left: -10px;
+            }
+        }
+
+        @keyframes alkylphosphate_4_2 {
+            from {
+                top: 17px;
+                left: 12px;
+            }
+
+            to {
+                top: 67px;
+                left: 117px;
+            }
+        }
+
+        @keyframes alkylphosphate_4_3 {
+            from {
+                top: 13px;
+                left: 2px;
+            }
+
+            to {
+                top: 30px;
+                left: 50px;
+            }
+        }
+
+        @keyframes alkylphosphate_4_4 {
+            from {
+                top: 0px;
+                left: 0px;
+            }
+
+            to {
+                top: -2px;
+                left: 50px;
+            }
+        }
+
+
+
+
+        .animate_alkylphosphate_4_1 {
+            animation-name: "alkylphosphate_4_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_4_2 {
+            animation-name: "alkylphosphate_4_2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_4_3 {
+            animation-name: "alkylphosphate_4_3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_4_4 {
+            animation-name: "alkylphosphate_4_4";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+        /* 5 - Erregung */
+
+        @keyframes alkylphosphate_5_1 {
+            from {
+                top: 330px;
+                left: 140px;
+            }
+
+            to {
+                top: 397px;
+                left: 115px;
+            }
+        }
+
+        @keyframes alkylphosphate_5_2 {
+            from {
+                top: 330px;
+                left: 200px;
+            }
+
+            to {
+                top: 415px;
+                left: 185px;
+            }
+        }
+
+        @keyframes alkylphosphate_5_3 {
+            from {
+                top: 330px;
+                left: 250px;
+            }
+
+            to {
+                top: 395px;
+                left: 270px;
+            }
+        }
+
+
+
+
+
+        .animate_alkylphosphate_5_1 {
+            animation-name: "alkylphosphate_5_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_5_2 {
+            animation-name: "alkylphosphate_5_2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_5_3 {
+            animation-name: "alkylphosphate_5_3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+        /* 6 - E605 hemmt die Acetylcholinesterase */
+
+        @keyframes alkylphosphate_6_1 {
+            from {
+                top: 270px;
+                left: 315px;
+            }
+
+            to {
+                top: 305px;
+                left: 310px;
+            }
+        }
+
+
+
+
+
+        .animate_alkylphosphate_6_1 {
+            animation-name: "alkylphosphate_6_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+        /* 7 - Lösen der Transmitter*/
+
+        @keyframes alkylphosphate_7_1 {
+            from {
+                top: 328px;
+                left: 245px;
+            }
+
+            to {
+                top: 328px;
+                left: 275px;
+            }
+        }
+
+
+
+
+        .animate_alkylphosphate_7_1 {
+            animation-name: "alkylphosphate_7_1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+        /* 8 - Na+ geht weiter rein */
+
+
+        @keyframes alkylphosphate_8_1_n1 {
+            from {
+                top: 397px;
+                left: 115px;
+            }
+
+            to {
+                top: 380px;
+                left: 90px;
+            }
+        }
+
+        @keyframes alkylphosphate_8_1_n2 {
+            from {
+                top: 415px;
+                left: 185px;
+            }
+
+            to {
+                top: 410px;
+                left: 170px;
+            }
+        }
+
+        @keyframes alkylphosphate_8_1_n3 {
+            from {
+                top: 395px;
+                left: 270px;
+            }
+
+            to {
+                top: 368px;
+                left: 300px;
+            }
+        }
+
+        @keyframes alkylphosphate_8_1_n4 {
+            from {
+                top: 330px;
+                left: 140px;
+            }
+
+            to {
+                top: 405px;
+                left: 140px;
+            }
+        }
+
+        @keyframes alkylphosphate_8_1_n5 {
+            from {
+                top: 330px;
+                left: 200px;
+            }
+
+            to {
+                top: 410px;
+                left: 200px;
+            }
+        }
+
+        @keyframes alkylphosphate_8_1_n6 {
+            from {
+                top: 330px;
+                left: 250px;
+            }
+
+            to {
+                top: 395px;
+                left: 270px;
+            }
+        }
+
+
+
+
+
+
+        .animate_alkylphosphate_8_1_n1 {
+            animation-name: "alkylphosphate_8_1_n1";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_8_1_n2 {
+            animation-name: "alkylphosphate_8_1_n2";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_8_1_n3 {
+            animation-name: "alkylphosphate_8_1_n3";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_8_1_n4 {
+            animation-name: "alkylphosphate_8_1_n4";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_8_1_n5 {
+            animation-name: "alkylphosphate_8_1_n5";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .animate_alkylphosphate_8_1_n6 {
+            animation-name: "alkylphosphate_8_1_n6";
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+
+<body onload="clearForm.reset();">
+
+    <script>
+        var animationDebounce = false
+
+        // Beschreibungen
+
+        const animationDescriptions = {
+            ["Nikotin"]: {
+                [0]: "Anfang",
+                [1]: "Erregung durch ein Aktionspotential",
+                [2]: "Ca2+ Ionenkanäle öffnen sich und Ca2+ Ionen strömen in die Präsynapse [Depolarisation]",
+                [3]: "Vesikel verschmilzt mit der Membran der Präsynapse",
+                [4]: "Acetylcholin diffundiert in den synaptischen Spalt und bindet an die Acetylcholin-Rezeptoren der Na+ Ionenkanäle an der Postsynapse",
+                [5]: "Nikotin gelangt in den synaptischen Spalt",
+                [6]: "Nikotin bindet an die nikotinischen Acetylcholin-Rezeptoren",
+                [7]: "Na+ Ionen wandern in die Nachbarzelle. Ein EPSP / IPSP wird in der Postsynapse ausgelöst",
+                [8]: "Acetylcholin löst sich von den Rezeptoren und bindet an die Acetylcholinesterase. Nikotin bindet nicht an die Acetylcholinesterase und bleibt deshalb länger an den Rezeptoren. So entsteht eine Dauererregung: Übelkeit und Schwindel sind Symptome.",
+                [9]: "Acetylcholin wird in Acetat und Cholin gespaltet",
+                [10]: "Cholin gelangt in die Präsynapse durch den Symporter",
+                [11]: "Cholin reagiert mit Acetyl-CoA zu Acetylcholin",
+                [12]: "Acetylcholin ist entstanden",
+                [13]: "Acetylcholin gelangt in das Vesikel",
+            },
+
+            ["Latrotoxin"]: {
+                [0]: "Anfang",
+                [1]: "Erregung durch ein Aktionspotential",
+                [2]: "Ca2+ Ionenkanäle öffnen sich und Ca2+ Ionen strömen in die Präsynapse",
+                [3]: "Latrotoxin gelangt in den synaptischen Spalt",
+                [4]: "Latrotoxin verhindert die Verschließung der Ca2+ Ionenkanäle",
+                [5]: "Übermäßig viel Ca2+ Ionen gelangen in die Präsynapse",
+                [6]: "Alle Vesikel verschmelzen mit der Membran der Präsynapse",
+                [7]: "Große Mengen an Acetylcholin werden ausgeschüttet und binden an die Acetylcholin-Rezeptoren",
+                [8]: "Die nachfolgende Nervenzelle wird dauerhaft aktiviert: Als Symptom kommen Muskelkrämpfe vor.",
+            },
+
+            ["Botulinumtoxin"]: {
+                [0]: "Anfang",
+                [1]: "Erregung durch ein Aktionspotential",
+                [2]: "Ca2+ Ionenkanäle öffnen sich und Ca2+ Ionen strömen in die Präsynapse",
+                [3]: "Botulinumtoxin verhindert die Fusion der Vesikel mit der Membran",
+                [4]: "Acetylcholin gelangt nicht in den synaptischen Spalt, weshalb die nachfolgende Zelle nicht aktiviert wird. So entstehen Lähmungen.",
+            },
+
+            ["Alkylphosphate"]: {
+                [0]: "Anfang",
+                [1]: "Erregung durch ein Aktionspotential",
+                [2]: "Ca2+ Ionenkanäle öffnen sich und Ca2+ Ionen strömen in die Präsynapse",
+                [3]: "Vesikel verschmilzt mit der Membran der Präsynapse",
+                [4]: "Acetylcholin diffundiert in den synaptischen Spalt und bindet an die Acetylcholin-Rezeptoren der Na+ Ionenkanäle an der Postsynapse",
+                [5]: "Auslösung von EPSP / IPSP in der Postsynapse",
+                [6]: "E605 hemmt die Acetylcholinesterase",
+                [7]: "Acetylcholin kann nicht mehr gespalten werden, weil die Acetylcholinesterase gehemmt ist. Deshalb bleibt es an den Rezeptoren hängen.",
+                [8]: "Die Na+ Ionenkanäle bleiben offen und Na+ strömt durchgehend in die Postsynapse",
+                [9]: "Die nachfolgende Zelle wird durchgehend aktiviert. Dadurch entstehen Muskelkrämpfe.",
+            }
+        }
+
+
+
+        // Gift Kurzbeschreibungen
+
+        const giftShortDescriptions = {
+            ["Nikotin"]: "Nikotin kommt aus den Zigaretten. Es aktiviert nikotinische Acetylcholin-Rezeptoren.",
+            ["Latrotoxin"]: "Latrotoxin kommt von der schwarzen Witwe. Es erhöht Ca2+ Einstrom.",
+            ["Botulinumtoxin"]: "Botulinumtoxin kommt von Bakterien. Es verhindert die Vesikelfusion.",
+            ["Alkylphosphate"]: "Alkylphosphate gibt es zum Beispiel als das Insektizid E605. Sie hemmen die Acetylcholinesterase."
+        }
+
+
+    </script>
+
+
+    </div>
+
+    <!-- Gift I -->
+    <div id="container_gift" style="display: block; position: relative;">
+        <h1>Synapsengifte</h1>
+
+        <div>
+            <form name="clearForm">
+                <input id="nikotinSelection" type="radio" checked="true" name="gift" onclick="GiftSelected('Nikotin')">
+                <label for="nikotinSelection">Nikotin</label>
+
+                <input id="latrotoxinSelection" type="radio" name="gift" onclick="GiftSelected('Latrotoxin')">
+                <label for="latrotoxinSelection">Latrotoxin</label>
+
+                <input id="botulinumtoxinSelection" type="radio" name="gift" onclick="GiftSelected('Botulinumtoxin')">
+                <label for="botulinumtoxinSelection">Botulinumtoxin</label>
+
+                <input id="alkylphosphateSelection" type="radio" name="gift" onclick="GiftSelected('Alkylphosphate')">
+                <label for="alkylphosphateSelection">Alkylphosphate (E605)</label>
+                <hr>
+
+                <input id="informationButton" type="button" value="Weitere Informationen einblenden"
+                    onClick="giftDescriptionButtonClicked()">
+                <br>
+                <div id="additionalInformation" style="display: none;">
+                    <br>
+                    <b>Synapse</b>: Diese Synapse ist eine chemische Synapse, die den Neurotransmitter "Acetylcholin"
+                    verwendet.<br>
+                    <label id="giftInformationLabel"></label>
+                </div>
+                <br>
+                <div
+                    style="display: table-cell; width: 600px; height: 100px; border: 2px solid black; text-align: center; vertical-align: middle;">
+                    <label id="animationDescription" style="font-size: 20px;"></label>
+                </div>
+
+                <br>
+                <input id="button_animation_prev" type="button" value="Zurück" onclick="PlayPreviousAnimation()">
+                <label id="animation_progress">1/?</label>
+                <input id="button_animation_next" type="button" value="Weiter" onclick="PlayNextAnimation()">
+
+            </form>
+
+        </div>
+
+
+        <div style="display: block; position:absolute;">
+            <img class="animationobj" src="resources/synapse_basis.png" width="400" height="500">
+
+            <img class="animationobj" src="resources/kanal_blau.png" width="40" height="45"
+                style="display: block; top: 360px; left: 120px; transform: rotate(15deg);">
+            <img class="animationobj" src="resources/kanal_blau.png" width="40" height="45"
+                style="display: block; top: 368px; left: 180px; transform: rotate(0deg);">
+            <img class="animationobj" src="resources/kanal_blau.png" width="40" height="45"
+                style="display: block; top: 355px; left: 255px; transform: rotate(-30deg);">
+            <img class="animationobj" src="resources/kanal_lila.png" width="40" height="45"
+                style="display: block; top: 210px; left: 102px; transform: rotate(110deg);">
+
+            <img id="rezeptor1_1" class="animationobj" src="resources/rezeptor.png" width="8" height="14"
+                style="display: block; top: 362px; left: 130px; transform: rotate(15deg);">
+            <img id="rezeptor1_2" class="animationobj" src="resources/rezeptor.png" width="8" height="14"
+                style="display: block; top: 367px; left: 148px; transform: rotate(15deg);">
+            <img id="rezeptor2_1" class="animationobj" src="resources/rezeptor.png" width="8" height="14"
+                style="display: block; top: 373px; left: 187px; transform: rotate(0deg);">
+            <img id="rezeptor2_2" class="animationobj" src="resources/rezeptor.png" width="8" height="14"
+                style="display: block; top: 373px; left: 206px; transform: rotate(0deg);">
+            <img id="rezeptor3_1" class="animationobj" src="resources/rezeptor.png" width="8" height="14"
+                style="display: block; top: 366px; left: 258px; transform: rotate(-30deg);">
+            <img id="rezeptor3_2" class="animationobj" src="resources/rezeptor.png" width="8" height="14"
+                style="display: block; top: 357px; left: 274px; transform: rotate(-30deg);">
+
+            <img id="enzym" class="animationobj" src="resources/enzym.png" width="25" height="25"
+                style="display: block; top: 320px; left: 308px; transform: rotate(-48deg);">
+            <img id="symporter" class="animationobj" src="resources/symporter.png" width="25" height="25"
+                style="display: block; top: 280px; left: 280px; transform: rotate(-48deg);">
+
+            <img id="natrium_1" class="animationobj" src="resources/natrium.png" width="20" height="20"
+                style="display: none; top: 330px; left: 140px; transform: rotate(0deg);">
+            <img id="natrium_2" class="animationobj" src="resources/natrium.png" width="20" height="20"
+                style="display: none; top: 330px; left: 200px; transform: rotate(0deg);">
+            <img id="natrium_3" class="animationobj" src="resources/natrium.png" width="20" height="20"
+                style="display: none; top: 330px; left: 250px; transform: rotate(0deg);">
+            <img id="natrium_4" class="animationobj" src="resources/natrium.png" width="20" height="20"
+                style="display: none; top: 330px; left: 140px; transform: rotate(0deg);">
+            <img id="natrium_5" class="animationobj" src="resources/natrium.png" width="20" height="20"
+                style="display: none; top: 330px; left: 200px; transform: rotate(0deg);">
+            <img id="natrium_6" class="animationobj" src="resources/natrium.png" width="20" height="20"
+                style="display: none; top: 330px; left: 250px; transform: rotate(0deg);">
+
+            <img id="calcium_1" class="animationobj" src="resources/calcium.png" width="20" height="20"
+                style="display: none; top: 200px; left: 90px; transform: rotate(0deg);">
+            <img id="calcium_2" class="animationobj" src="resources/calcium.png" width="20" height="20"
+                style="display: none; top: 210px; left: 60px; transform: rotate(0deg);">
+            <img id="calcium_3" class="animationobj" src="resources/calcium.png" width="20" height="20"
+                style="display: none; top: 180px; left: 60px; transform: rotate(0deg);">
+            <img id="calcium_4" class="animationobj" src="resources/calcium.png" width="20" height="20"
+                style="display: none; top: 200px; left: 90px; transform: rotate(0deg);">
+            <img id="calcium_5" class="animationobj" src="resources/calcium.png" width="20" height="20"
+                style="display: none; top: 210px; left: 60px; transform: rotate(0deg);">
+            <img id="calcium_6" class="animationobj" src="resources/calcium.png" width="20" height="20"
+                style="display: none; top: 180px; left: 60px; transform: rotate(0deg);">
+
+            <img id="acetat" class="animationobj" src="resources/acetat.png" width="8" height="8"
+                style="display: none; top: 320px; left: 300px; transform: rotate(0deg);">
+            <img id="cholin" class="animationobj" src="resources/cholin.png" width="8" height="8"
+                style="display: none; top: 310px; left: 310px; transform: rotate(0deg);">
+            <img id="acetylcoa" class="animationobj" src="resources/acetylcoa.png" width="8" height="8"
+                style="display: none; top: 250px; left: 290px; transform: rotate(0deg);">
+
+
+
+
+            <div id="fullvesikel1" class="animationobj" style="top: 220px; left: 150px; position: absolute;">
+                <img id="vesikel1" class="animationobj" src="resources/vesikel.png" width="30" height="30"
+                    style="display: block; transform: rotate(0deg);">
+                <img id="neurotransmitter1_1" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 7px; left: 15px; transform: rotate(0deg);">
+                <img id="neurotransmitter1_2" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 17px; left: 12px; transform: rotate(0deg);">
+                <img id="neurotransmitter1_3" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 13px; left: 2px; transform: rotate(0deg);">
+            </div>
+
+
+            <div id="fullvesikel2" class="animationobj" style="top: 260px; left: 125px; position: absolute;">
+                <img id="vesikel2" class="animationobj" src="resources/vesikel.png" width="30" height="30"
+                    style="display: block; transform: rotate(0deg);">
+                <img id="neurotransmitter2_1" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 7px; left: 15px; transform: rotate(0deg);">
+                <img id="neurotransmitter2_2" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 17px; left: 12px; transform: rotate(0deg);">
+                <img id="neurotransmitter2_3" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 13px; left: 2px; transform: rotate(0deg);">
+            </div>
+
+            <div id="fullvesikel3" class="animationobj" style="top: 200px; left: 205px; position: absolute;">
+                <img id="vesikel3" class="animationobj" src="resources/vesikel.png" width="30" height="30"
+                    style="display: block; transform: rotate(0deg);">
+                <img id="neurotransmitter3_1" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 7px; left: 15px; transform: rotate(0deg);">
+                <img id="neurotransmitter3_2" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 17px; left: 12px; transform: rotate(0deg);">
+                <img id="neurotransmitter3_3" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 13px; left: 2px; transform: rotate(0deg);">
+            </div>
+            <div id="fullvesikel4" class="animationobj" style="top: 250px; left: 230px; position: absolute;">
+                <img id="vesikel4" class="animationobj" src="resources/vesikel.png" width="30" height="30"
+                    style="display: block; top: 0px; left: 0px; transform: rotate(0deg);">
+                <img id="neurotransmitter4_1" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 7px; left: 15px; transform: rotate(0deg);">
+                <img id="neurotransmitter4_2" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 17px; left: 12px; transform: rotate(0deg);">
+                <img id="neurotransmitter4_3" class="animationobj" src="resources/neurotransmitter.png" width="8"
+                    height="8" style="display: block; top: 13px; left: 2px; transform: rotate(0deg);">
+            </div>
+
+            <img id="nikotin_1" class="animationobj" src="resources/nikotin.png" width="8" height="8"
+                style="display: none; top: 200px; left: 90px; transform: rotate(0deg);">
+            <img id="nikotin_2" class="animationobj" src="resources/nikotin.png" width="8" height="8"
+                style="display: none; top: 210px; left: 80px; transform: rotate(0deg);">
+            <img id="nikotin_3" class="animationobj" src="resources/nikotin.png" width="8" height="8"
+                style="display: none; top: 180px; left: 85px; transform: rotate(0deg);">
+
+            <img id="latrotoxin_1" class="animationobj" src="resources/latrotoxin.png" width="8" height="8"
+                style="display: none; top: 200px; left: 90px; transform: rotate(0deg);">
+            <img id="latrotoxin_2" class="animationobj" src="resources/latrotoxin.png" width="8" height="8"
+                style="display: none; top: 210px; left: 80px; transform: rotate(0deg);">
+            <img id="latrotoxin_3" class="animationobj" src="resources/latrotoxin.png" width="8" height="8"
+                style="display: none; top: 180px; left: 85px; transform: rotate(0deg);">
+
+            <img id="botulinumtoxin_1" class="animationobj" src="resources/botulinumtoxin.png" width="25" height="25"
+                style="display: none; top: 290px; left: 170px; transform: rotate(-90deg);">
+
+            <img id="e605_1" class="animationobj" src="resources/e605.png" width="15" height="15"
+                style="display: none; top: 270px; left: 315px; transform: rotate(180deg);">
+
+
+            <img id="blitzAP" class="animationobj" src="resources/blitz.png" width="70" height="70"
+                style="display: none; top: 110px; left: 175px; transform: rotate(0deg);">
+
+            <img id="blitz1" class="animationobj" src="resources/blitz.png" width="100" height="100"
+                style="display: none; top: 450px; left: 95px; transform: rotate(0deg);">
+            <img id="blitz2" class="animationobj" src="resources/blitz.png" width="100" height="100"
+                style="display: none; top: 450px; left: 165px; transform: rotate(0deg);">
+            <img id="blitz3" class="animationobj" src="resources/blitz.png" width="100" height="100"
+                style="display: none; top: 450px; left: 235px; transform: rotate(0deg);">
+
+            <img id="kreuz1" class="animationobj" src="resources/kreuz.png" width="30" height="30"
+                style="display: none; top: 305px; left: 125px; transform: rotate(0deg);">
+            <img id="kreuz2" class="animationobj" src="resources/kreuz.png" width="50" height="50"
+                style="display: none; top: 322px; left: 175px; transform: rotate(0deg);">
+            <img id="kreuz3" class="animationobj" src="resources/kreuz.png" width="20" height="20"
+                style="display: none; top: 323px; left: 287px; transform: rotate(0deg); opacity: 60%;">
+
+            <img id="pseudoneurotransmitter" class="animationobj" src="resources/neurotransmitter.png" width="10"
+                height="10" style="display: none; top: 328px; left: 245px; transform: rotate(90deg); opacity: 60%;">
+
+            <img id="schwindel" class="animationobj" src="resources/schwindel.png" width="230" height="150"
+                style="display: none; top: 100px; left: 450px; transform: rotate(0deg);">
+            <img id="uebelkeit" class="animationobj" src="resources/uebelkeit.png" width="230" height="150"
+                style="display: none; top: 310px; left: 450px; transform: rotate(0deg);">
+            <img id="muskelkrampf" class="animationobj" src="resources/muskelkrampf.png" width="230" height="150"
+                style="display: none; top: 100px; left: 450px; transform: rotate(0deg);">
+            <img id="laehmung" class="animationobj" src="https://images.pexels.com/photos/4064339/pexels-photo-4064339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="230" height="150"
+                style="display: none; top: 100px; left: 450px; transform: rotate(0deg);">
+
+
+        </div>
+
+        <div id="container_legende"
+            style="display: none ;position: absolute; border: 2px solid black; width: 250px; height: 450px; left: 750px">
+            <div style="position: absolute;">
+                <img id="legende_calciumkanal" src="resources/kanal_lila.png" width="40" height="45"
+                    style="position: absolute;">
+                <label style="position: absolute; top: 13px; left: 45px; width: 200px"><b>Calcium-Ionenkanal</b></label>
+            </div>
+            <div style="position: absolute;">
+                <img id="legende_vesikel" src="resources/vesikel.png" width="40" height="40"
+                    style="position: absolute; top:50px">
+                <label style="position: absolute; top: 63px; left: 45px; width: 200px"><b>Vesikel</b></label>
+            </div>
+            <div style="position: absolute;">
+                <img id="legende_neurotransmitter" src="resources/neurotransmitter.png" width="40" height="40"
+                    style="position: absolute; top:100px">
+                <label style="position: absolute; top: 113px; left: 45px; width: 200px"><b>Acetylcholin</b></label>
+            </div>
+            <div style="position: absolute;">
+                <img id="legende_enzym" src="resources/enzym.png" width="40" height="40"
+                    style="position: absolute; top:150px">
+                <label
+                    style="position: absolute; top: 163px; left: 45px; width: 200px"><b>Acetylcholinesterase</b></label>
+            </div>
+            <div style="position: absolute;">
+                <img id="legende_symporter" src="resources/symporter.png" width="40" height="40"
+                    style="position: absolute; top:200px">
+                <label style="position: absolute; top: 213px; left: 45px; width: 200px"><b>Symporter</b></label>
+            </div>
+            <div style="position: absolute;">
+                <img id="legende_acetat" src="resources/acetat.png" width="40" height="40"
+                    style="position: absolute; top:250px">
+                <label style="position: absolute; top: 263px; left: 45px; width: 200px"><b>Acetat</b></label>
+            </div>
+            <div style="position: absolute;">
+                <img id="legende_cholin" src="resources/cholin.png" width="40" height="40"
+                    style="position: absolute; top:300px">
+                <label style="position: absolute; top: 313px; left: 45px; width: 200px"><b>Cholin</b></label>
+            </div>
+            <div style="position: absolute;">
+                <img id="legende_natriumkanal" src="resources/kanal_blau.png" width="40" height="40"
+                    style="position: absolute; top:350px">
+                <label
+                    style="position: absolute; top: 363px; left: 45px; width: 200px"><b>Natrium-Ionenkanal</b></label>
+            </div>
+            <div style="position: absolute;">
+                <img id="legende_rezeptor" src="resources/rezeptor.png" width="20" height="40"
+                    style="position: absolute; top:400px; left: 10px">
+                <label
+                    style="position: absolute; top: 413px; left: 45px; width: 200px"><b>Rezeptor</b></label>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Quellen -->
+    <div id="container_quellen" style="display: none;">
+
+        <h1>Quellen</h1>
+
+        Dies sind die Quellen:
+        <a href="https://studyflix.de/biologie/synapse-2754">https://studyflix.de/biologie/synapse-2754</a>
+
+    </div>
+
+
+    <!-- Verkabelung - Auswahl des Gifts -->
+    <script>
+        const giftShortDescriptionLabel = document.getElementById("giftInformationLabel")
+
+        function GiftSelected(selectedGift) {
+            ResetAnimation()
+            animationDebounce = false
+            animationProgress = 1
+
+            giftShortDescriptionLabel.innerHTML = "<b>" + selectedGift + "</b>: " + giftShortDescriptions[selectedGift]
+
+            currentAnimation = selectedGift
+            PlayAnimation()
+        }
+    </script>
+
+
+
+    <!-- Verkabelung - Animationen -->
+    <script>
+        var currentAnimation = "Nikotin"
+        var animationProgress = 1
+
+        const animationprogress = document.getElementById("animation_progress")
+        const animationdescription = document.getElementById("animationDescription")
+
+        const fullvesikel1 = document.getElementById("fullvesikel1")
+        const fullvesikel3 = document.getElementById("fullvesikel3")
+        const fullvesikel4 = document.getElementById("fullvesikel4")
+
+        const fullvesikel2 = document.getElementById("fullvesikel2")
+        const vesikel2 = document.getElementById("vesikel2")
+        const neurotransmitter2_1 = document.getElementById("neurotransmitter2_1")
+        const neurotransmitter2_2 = document.getElementById("neurotransmitter2_2")
+        const neurotransmitter2_3 = document.getElementById("neurotransmitter2_3")
+
+        const neurotransmitter1_1 = document.getElementById("neurotransmitter1_1")
+        const neurotransmitter1_2 = document.getElementById("neurotransmitter1_2")
+        const neurotransmitter1_3 = document.getElementById("neurotransmitter1_3")
+
+        const neurotransmitter3_1 = document.getElementById("neurotransmitter3_1")
+        const neurotransmitter3_2 = document.getElementById("neurotransmitter3_2")
+        const neurotransmitter3_3 = document.getElementById("neurotransmitter3_3")
+
+        const neurotransmitter4_1 = document.getElementById("neurotransmitter4_1")
+        const neurotransmitter4_2 = document.getElementById("neurotransmitter4_2")
+        const neurotransmitter4_3 = document.getElementById("neurotransmitter4_3")
+
+        const pseudoneurotransmitter = document.getElementById("pseudoneurotransmitter")
+
+
+        const acetat = document.getElementById("acetat")
+        const cholin = document.getElementById("cholin")
+        const acetylcoa = document.getElementById("acetylcoa")
+
+        const natrium_1 = document.getElementById("natrium_1")
+        const natrium_2 = document.getElementById("natrium_2")
+        const natrium_3 = document.getElementById("natrium_3")
+        const natrium_4 = document.getElementById("natrium_4")
+        const natrium_5 = document.getElementById("natrium_5")
+        const natrium_6 = document.getElementById("natrium_6")
+
+        const calcium_1 = document.getElementById("calcium_1")
+        const calcium_2 = document.getElementById("calcium_2")
+        const calcium_3 = document.getElementById("calcium_3")
+        const calcium_4 = document.getElementById("calcium_4")
+        const calcium_5 = document.getElementById("calcium_5")
+        const calcium_6 = document.getElementById("calcium_6")
+
+        const nikotin_1 = document.getElementById("nikotin_1")
+        const nikotin_2 = document.getElementById("nikotin_2")
+        const nikotin_3 = document.getElementById("nikotin_3")
+
+        const latrotoxin_1 = document.getElementById("latrotoxin_1")
+        const latrotoxin_2 = document.getElementById("latrotoxin_2")
+        const latrotoxin_3 = document.getElementById("latrotoxin_3")
+
+        const botulinumtoxin_1 = document.getElementById("botulinumtoxin_1")
+
+        const e605 = document.getElementById("e605_1")
+
+        const blitz_AP = document.getElementById("blitzAP")
+        const blitz_1 = document.getElementById("blitz1")
+        const blitz_2 = document.getElementById("blitz2")
+        const blitz_3 = document.getElementById("blitz3")
+
+        const kreuz_1 = document.getElementById("kreuz1")
+        const kreuz_2 = document.getElementById("kreuz2")
+        const kreuz_3 = document.getElementById("kreuz3")
+
+        const schwindel = document.getElementById("schwindel")
+        const uebelkeit = document.getElementById("uebelkeit")
+        const muskelkrampf = document.getElementById("muskelkrampf")
+        const laehmung = document.getElementById("laehmung")
+
+
+        function ResetAnimation() {
+            fullvesikel1.classList = "animationobj"
+            fullvesikel2.classList = "animationobj"
+            fullvesikel3.classList = "animationobj"
+            fullvesikel4.classList = "animationobj"
+
+            vesikel2.classList = "animationobj"
+            neurotransmitter2_1.classList = "animationobj"
+            neurotransmitter2_2.classList = "animationobj"
+            neurotransmitter2_3.classList = "animationobj"
+
+            neurotransmitter1_1.classList = "animationobj"
+            neurotransmitter1_2.classList = "animationobj"
+            neurotransmitter1_3.classList = "animationobj"
+
+            neurotransmitter3_1.classList = "animationobj"
+            neurotransmitter3_2.classList = "animationobj"
+            neurotransmitter3_3.classList = "animationobj"
+
+            neurotransmitter4_1.classList = "animationobj"
+            neurotransmitter4_2.classList = "animationobj"
+            neurotransmitter4_3.classList = "animationobj"
+
+            pseudoneurotransmitter.classList = "animationobj"
+
+            acetat.classList = "animationobj"
+            cholin.classList = "animationobj"
+            acetylcoa.classList = "animationobj"
+
+            natrium_1.classList = "animationobj"
+            natrium_2.classList = "animationobj"
+            natrium_3.classList = "animationobj"
+            natrium_4.classList = "animationobj"
+            natrium_5.classList = "animationobj"
+            natrium_6.classList = "animationobj"
+
+            calcium_1.classList = "animationobj"
+            calcium_2.classList = "animationobj"
+            calcium_3.classList = "animationobj"
+            calcium_4.classList = "animationobj"
+            calcium_5.classList = "animationobj"
+            calcium_6.classList = "animationobj"
+
+            nikotin_1.classList = "animationobj"
+            nikotin_2.classList = "animationobj"
+            nikotin_3.classList = "animationobj"
+
+            latrotoxin_1.classList = "animationobj"
+            latrotoxin_2.classList = "animationobj"
+            latrotoxin_3.classList = "animationobj"
+
+            botulinumtoxin_1.classList = "animationobj"
+            botulinumtoxin_1.classList = "animationobj"
+            botulinumtoxin_1.classList = "animationobj"
+
+            e605.classList = "animationobj"
+
+            blitz_AP.style.display = "none"
+            blitz_1.style.display = "none"
+            blitz_2.style.display = "none"
+            blitz_3.style.display = "none"
+
+            kreuz_1.style.display = "none"
+            kreuz_2.style.display = "none"
+            kreuz_3.style.display = "none"
+
+            schwindel.style.display = "none"
+            uebelkeit.style.display = "none"
+            muskelkrampf.style.display = "none"
+            laehmung.style.display = "none"
+
+            neurotransmitter2_2.style.display = "block"
+            acetat.style.display = "none"
+            cholin.style.display = "none"
+            acetylcoa.style.display = "none"
+
+            natrium_1.style.display = "none"
+            natrium_2.style.display = "none"
+            natrium_3.style.display = "none"
+            natrium_4.style.display = "none"
+            natrium_5.style.display = "none"
+            natrium_6.style.display = "none"
+
+            calcium_1.style.display = "none"
+            calcium_2.style.display = "none"
+            calcium_3.style.display = "none"
+            calcium_4.style.display = "none"
+            calcium_5.style.display = "none"
+            calcium_6.style.display = "none"
+
+            nikotin_1.style.display = "none"
+            nikotin_2.style.display = "none"
+            nikotin_3.style.display = "none"
+
+            latrotoxin_1.style.display = "none"
+            latrotoxin_2.style.display = "none"
+            latrotoxin_3.style.display = "none"
+
+            pseudoneurotransmitter.style.display = "none"
+
+            botulinumtoxin_1.style.display = "none"
+
+            e605.style.display = "none"
+
+            neurotransmitter2_2.style.top = "17px"
+            neurotransmitter2_2.style.left = "12px"
+
+            blitz_2.src = "resources/blitz.png"
+            blitz_3.src = "resources/blitz.png"
+        }
+
+        function PlayPreviousAnimation() {
+            var animationCount = Object.keys(animationDescriptions[currentAnimation]).length - 1
+            if (animationDebounce === false) {
+                animationDebounce = true
+                if (animationProgress === 1) {
+                    animationProgress = animationCount
+                }
+                animationProgress -= 1
+                ResetAnimation()
+
+                for (let i = 0; i < animationProgress; i++) {
+                    PlayAnimation(i)
+                }
+                PlayAnimation()
+                animationDebounce = false
+            }
+        }
+
+        function PlayNextAnimation() {
+            var animationCount = Object.keys(animationDescriptions[currentAnimation]).length - 1
+            if (animationDebounce === false) {
+                animationDebounce = true
+                if (animationProgress === animationCount + 1) {
+                    animationProgress = 0
+                    ResetAnimation()
+                }
+                animationProgress += 1
+                PlayAnimation()
+                animationDebounce = false
+            }
+
+
+        }
+
+        function PlayAnimation(forcedProgress) {
+            var progressToPlay = forcedProgress || animationProgress - 1
+            var animationCount = Object.keys(animationDescriptions[currentAnimation]).length - 1
+
+            animationprogress.innerHTML = progressToPlay.toString() + "/" + animationCount.toString()
+
+            animationdescription.innerHTML = animationDescriptions[currentAnimation][progressToPlay]
+
+
+            // Nikotin Animationen
+
+            if (currentAnimation === "Nikotin") {
+                if (progressToPlay === 1) {
+                    // Animation 1
+
+                    blitz_AP.style.display = "block"
+                } else if (progressToPlay === 2) {
+                    // Animation 2
+
+                    // Next
+
+                    calcium_1.style.display = "block"
+                    calcium_2.style.display = "block"
+                    calcium_3.style.display = "block"
+
+                    calcium_1.classList.add("animate_nikotin_2_1")
+                    calcium_2.classList.add("animate_nikotin_2_2")
+                    calcium_3.classList.add("animate_nikotin_2_3")
+                } else if (progressToPlay === 3) {
+                    // Animation 3
+
+                    // Next
+
+                    fullvesikel2.classList.add("animate_nikotin_3")
+                } else if (progressToPlay === 4) {
+                    // Animation 4
+
+                    // Next
+
+                    neurotransmitter2_1.classList.add("animate_nikotin_4_1")
+                    neurotransmitter2_2.classList.add("animate_nikotin_4_2")
+                    neurotransmitter2_3.classList.add("animate_nikotin_4_3")
+
+                    vesikel2.classList.add("animate_nikotin_4_4")
+                } else if (progressToPlay === 5) {
+                    // Animation 5
+
+                    // Next
+
+                    nikotin_1.style.display = "block"
+                    nikotin_2.style.display = "block"
+                    nikotin_3.style.display = "block"
+
+                    nikotin_1.classList.add("animate_nikotin_5_1")
+                    nikotin_2.classList.add("animate_nikotin_5_2")
+                    nikotin_3.classList.add("animate_nikotin_5_3")
+
+                    fullvesikel1.classList.add("animate_nikotin_5_4_v1")
+                    fullvesikel3.classList.add("animate_nikotin_5_4_v3")
+                    fullvesikel4.classList.add("animate_nikotin_5_4_v4")
+                    vesikel2.classList.add("animate_nikotin_5_4_v2")
+                } else if (progressToPlay === 6) {
+                    // Animation 6
+
+                    // Next
+
+
+
+                    nikotin_1.classList.add("animate_nikotin_6_1")
+                    nikotin_2.classList.add("animate_nikotin_6_2")
+                    nikotin_3.classList.add("animate_nikotin_6_3")
+                } else if (progressToPlay === 7) {
+                    // Animation 7
+
+                    // Next
+
+                    natrium_1.style.display = "block"
+                    natrium_2.style.display = "block"
+                    natrium_3.style.display = "block"
+
+                    natrium_1.classList.add("animate_nikotin_7_1")
+                    natrium_2.classList.add("animate_nikotin_7_2")
+                    natrium_3.classList.add("animate_nikotin_7_3")
+
+
+                    blitz_3.src = "resources/blitz_rot.png"
+
+                    blitz_1.style.display = "block"
+                    blitz_2.style.display = "block"
+                    blitz_3.style.display = "block"
+                } else if (progressToPlay === 8) {
+                    // Animation 8
+
+                    blitz_1.style.display = "none"
+                    blitz_2.style.display = "none"
+
+                    schwindel.style.display = "block"
+                    uebelkeit.style.display = "block"
+
+                    neurotransmitter2_1.classList.add("animate_nikotin_8_1")
+                    neurotransmitter2_2.classList.add("animate_nikotin_8_2")
+                    neurotransmitter2_3.classList.add("animate_nikotin_8_3")
+                } else if (progressToPlay === 9) {
+                    // Animation 9
+
+                    neurotransmitter2_2.style.display = "none"
+                    acetat.style.display = "block"
+                    cholin.style.display = "block"
+
+                    uebelkeit.style.display = "none"
+                    schwindel.style.display = "none"
+
+
+                } else if (progressToPlay === 10) {
+                    // Animation 10
+
+                    acetat.classList.add("animate_nikotin_10_1")
+                    cholin.classList.add("animate_nikotin_10_2")
+
+
+                } else if (progressToPlay === 11) {
+                    // Animation 11
+
+                    acetylcoa.style.display = "block"
+
+
+                } else if (progressToPlay === 12) {
+                    // Animation 12
+
+                    cholin.classList.add("animate_nikotin_12_1")
+                    acetylcoa.classList.add("animate_nikotin_12_2")
+
+                    setTimeout(function () { }, 1500)
+
+                    cholin.style.display = "none"
+                    acetylcoa.style.display = "none"
+
+                    neurotransmitter2_2.classList = ""
+                    neurotransmitter2_2.classList.add("animationobj")
+
+                    neurotransmitter2_2.style.top = "-40px"
+                    neurotransmitter2_2.style.left = "145px"
+                    neurotransmitter2_2.style.display = "block"
+
+                } else if (progressToPlay === 13) {
+                    // Animation 13
+
+                    neurotransmitter2_2.classList.add("animate_nikotin_13_1")
+                }
+
+
+
+                // Latrotoxin Animationen
+
+            } else if (currentAnimation === "Latrotoxin") {
+                if (progressToPlay === 1) {
+                    // Animation 1
+
+                    blitz_AP.style.display = "block"
+                } else if (progressToPlay === 2) {
+                    // Animation 2
+
+                    // Next
+
+                    calcium_1.style.display = "block"
+                    calcium_2.style.display = "block"
+                    calcium_3.style.display = "block"
+
+                    calcium_1.classList.add("animate_latrotoxin_2_1")
+                    calcium_2.classList.add("animate_latrotoxin_2_2")
+                    calcium_3.classList.add("animate_latrotoxin_2_3")
+                } else if (progressToPlay === 3) {
+                    // Animation 3
+
+                    // Next
+
+                    latrotoxin_1.style.display = "block"
+                    latrotoxin_2.style.display = "block"
+                    latrotoxin_3.style.display = "block"
+                } else if (progressToPlay === 4) {
+                    // Animation 4
+
+                    latrotoxin_3.classList.add("animate_latrotoxin_4_1")
+                } else if (progressToPlay === 5) {
+
+                    calcium_4.style.display = "block"
+                    calcium_5.style.display = "block"
+                    calcium_6.style.display = "block"
+
+                    calcium_4.classList.add("animate_latrotoxin_5_1")
+                    calcium_5.classList.add("animate_latrotoxin_5_2")
+                    calcium_6.classList.add("animate_latrotoxin_5_3")
+                } else if (progressToPlay === 6) {
+
+                    calcium_1.classList.add("animate_latrotoxin_6_1")
+                    calcium_2.classList.add("animate_latrotoxin_6_2")
+                    calcium_3.classList.add("animate_latrotoxin_6_3")
+                    calcium_4.classList.add("animate_latrotoxin_6_4")
+                    calcium_5.classList.add("animate_latrotoxin_6_5")
+                    calcium_6.classList.add("animate_latrotoxin_6_6")
+                    fullvesikel1.classList.add("animate_latrotoxin_6_7_v1")
+                    fullvesikel2.classList.add("animate_latrotoxin_6_7_v2")
+                    fullvesikel3.classList.add("animate_latrotoxin_6_7_v3")
+                    fullvesikel4.classList.add("animate_latrotoxin_6_7_v4")
+
+
+                } else if (progressToPlay === 7) {
+                    neurotransmitter1_1.classList.add("animate_latrotoxin_7_1_nt1")
+                    neurotransmitter1_2.classList.add("animate_latrotoxin_7_1_nt2")
+                    neurotransmitter1_3.classList.add("animate_latrotoxin_7_1_nt3")
+
+                    neurotransmitter2_1.classList.add("animate_latrotoxin_7_2_nt1")
+                    neurotransmitter2_2.classList.add("animate_latrotoxin_7_2_nt2")
+                    neurotransmitter2_3.classList.add("animate_latrotoxin_7_2_nt3")
+
+                    neurotransmitter3_1.classList.add("animate_latrotoxin_7_3_nt1")
+                    neurotransmitter3_2.classList.add("animate_latrotoxin_7_3_nt2")
+                    neurotransmitter3_3.classList.add("animate_latrotoxin_7_3_nt3")
+
+                    neurotransmitter4_1.classList.add("animate_latrotoxin_7_4_nt1")
+                    neurotransmitter4_2.classList.add("animate_latrotoxin_7_4_nt2")
+                    neurotransmitter4_3.classList.add("animate_latrotoxin_7_4_nt3")
+
+                } else if (progressToPlay === 8) {
+                    natrium_1.style.display = "block"
+                    natrium_2.style.display = "block"
+                    natrium_3.style.display = "block"
+
+                    blitz_1.style.display = "block"
+                    blitz_2.style.display = "block"
+                    blitz_3.style.display = "block"
+
+                    blitz_2.src = "resources/blitz_rot.png"
+                    blitz_3.src = "resources/blitz_rot.png"
+
+                    natrium_1.classList.add("animate_latrotoxin_8_1")
+                    natrium_2.classList.add("animate_latrotoxin_8_2")
+                    natrium_3.classList.add("animate_latrotoxin_8_3")
+
+                    muskelkrampf.style.display = "block"
+                }
+
+
+                // Botulinumtoxin Animationen
+
+            } else if (currentAnimation === "Botulinumtoxin") {
+                if (progressToPlay === 1) {
+                    // Animation 1
+
+                    blitz_AP.style.display = "block"
+                } else if (progressToPlay === 2) {
+                    // Animation 2
+
+                    // Next
+
+                    calcium_1.style.display = "block"
+                    calcium_2.style.display = "block"
+                    calcium_3.style.display = "block"
+
+                    calcium_1.classList.add("animate_botulinumtoxin_2_1")
+                    calcium_2.classList.add("animate_botulinumtoxin_2_2")
+                    calcium_3.classList.add("animate_botulinumtoxin_2_3")
+                } else if (progressToPlay === 3) {
+                    // Animation 3
+
+                    // Next
+
+                    botulinumtoxin_1.style.display = "block"
+                    kreuz_1.style.display = "block"
+
+                    fullvesikel2.classList.add("animate_botulinumtoxin_3_1")
+                    botulinumtoxin_1.classList.add("animate_botulinumtoxin_3_2")
+                } else if (progressToPlay === 4) {
+                    // Animation 4
+
+                    kreuz_2.style.display = "block"
+                    laehmung.style.display = "block"
+                }
+
+
+                // Alkylphosphate (E605) Animationen
+
+            } else if (currentAnimation === "Alkylphosphate") {
+                if (progressToPlay === 1) {
+                    // Animation 1
+
+                    blitz_AP.style.display = "block"
+                } else if (progressToPlay === 2) {
+                    // Animation 2
+
+                    // Next
+
+                    calcium_1.style.display = "block"
+                    calcium_2.style.display = "block"
+                    calcium_3.style.display = "block"
+
+                    calcium_1.classList.add("animate_alkylphosphate_2_1")
+                    calcium_2.classList.add("animate_alkylphosphate_2_2")
+                    calcium_3.classList.add("animate_alkylphosphate_2_3")
+                } else if (progressToPlay === 3) {
+                    // Animation 3
+
+                    // Next
+
+
+
+                    fullvesikel2.classList.add("animate_alkylphosphate_3_1")
+                } else if (progressToPlay === 4) {
+                    // Animation 4
+
+                    neurotransmitter2_1.classList.add("animate_alkylphosphate_4_1")
+                    neurotransmitter2_2.classList.add("animate_alkylphosphate_4_2")
+                    neurotransmitter2_3.classList.add("animate_alkylphosphate_4_3")
+
+                    vesikel2.classList.add("animate_alkylphosphate_4_4")
+                } else if (progressToPlay === 5) {
+                    // Animation 5
+
+                    // Next
+
+                    natrium_1.style.display = "block"
+                    natrium_2.style.display = "block"
+                    natrium_3.style.display = "block"
+
+                    natrium_1.classList.add("animate_alkylphosphate_5_1")
+                    natrium_2.classList.add("animate_alkylphosphate_5_2")
+                    natrium_3.classList.add("animate_alkylphosphate_5_3")
+
+                    blitz_1.style.display = "block"
+                    blitz_2.style.display = "block"
+                    blitz_3.style.display = "block"
+                } else if (progressToPlay === 6) {
+                    // Animation 6
+
+                    // Next
+
+                    e605.style.display = "block"
+                    e605.classList.add("animate_alkylphosphate_6_1")
+                } else if (progressToPlay === 7) {
+                    // Animation 7
+
+                    // Next
+
+                    pseudoneurotransmitter.style.display = "block"
+                    kreuz_3.style.display = "block"
+                    pseudoneurotransmitter.classList.add("animate_alkylphosphate_7_1")
+                } else if (progressToPlay === 8) {
+                    // Animation 8
+
+                    // Next
+
+                    natrium_4.style.display = "block"
+                    natrium_5.style.display = "block"
+                    natrium_6.style.display = "block"
+
+
+                    natrium_1.classList.add("animate_alkylphosphate_8_1_n1")
+                    natrium_2.classList.add("animate_alkylphosphate_8_1_n2")
+                    natrium_3.classList.add("animate_alkylphosphate_8_1_n3")
+                    natrium_4.classList.add("animate_alkylphosphate_8_1_n4")
+                    natrium_5.classList.add("animate_alkylphosphate_8_1_n5")
+                    natrium_6.classList.add("animate_alkylphosphate_8_1_n6")
+                } else if (progressToPlay === 9) {
+                    // Animation 9
+
+                    // Next
+
+                    blitz_2.src = "resources/blitz_rot.png"
+                    blitz_3.src = "resources/blitz_rot.png"
+
+                    muskelkrampf.style.display = "block"
+                }
+            }
+
+
+
+        }
+    </script>
+
+    <!-- Verkabelung - Folien -->
+    <script>
+        const shortDescriptionContainer = document.getElementById("additionalInformation")
+        const additionalInformationButton = document.getElementById("informationButton")
+        const legendeContainer = document.getElementById("container_legende")
+
+        function giftDescriptionButtonClicked() {
+            if (shortDescriptionContainer.style.display === "none") {
+                additionalInformationButton.value = "Weitere Informationen ausblenden"
+                shortDescriptionContainer.style.display = "block"
+                legendeContainer.style.display = "block"
+            } else if (shortDescriptionContainer.style.display === "block") {
+                additionalInformationButton.value = "Weitere Informationen einblenden"
+                shortDescriptionContainer.style.display = "none"
+                legendeContainer.style.display = "none"
+            }
+        }
+
+
+
+    </script>
+
+    <!-- Verkabelung - Start -->
+    <script>
+        GiftSelected("Nikotin")
+    </script>
+
+</body>
+
 </html>
